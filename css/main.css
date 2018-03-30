@@ -1,15 +1,19 @@
 body {
     width: 100%;
+    font-family: 'Ubuntu', sans-serif;
 }
-#encabezado {
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.encabezado {
     width: 100%;
     height: auto;
-    background-color: #0085c3;
+    background-color: #004D72;
     padding-top: 8px;
     padding-bottom: 8px;
-}
-div{
-}
-#carrusel {
-    width: 100%;
 }
