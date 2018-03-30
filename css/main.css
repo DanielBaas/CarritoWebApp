@@ -1,0 +1,15 @@
+body {
+    width: 100%;
+}
+#encabezado {
+    width: 100%;
+    height: auto;
+    background-color: #0085c3;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+div{
+}
+#carrusel {
+    width: 100%;
+}
