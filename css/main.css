@@ -1,6 +1,8 @@
 body {
     width: 100%;
     font-family: 'Ubuntu', sans-serif;
+    color: #f3f3f3;
+    background-color: #f3f3f3;
 }
 .container-fluid {
     padding-left: 0;
@@ -10,10 +12,124 @@ body {
     margin-left: 0;
     margin-right: 0;
 }
+a {
+    text-decoration: none;
+    color: #f3f3f3;
+}
+a:hover {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    max-width: 100%;
+}
 .encabezado {
     width: 100%;
     height: auto;
     background-color: #004D72;
     padding-top: 8px;
     padding-bottom: 8px;
+}
+.menu {
+    color: #f3f3f3;
+    padding-top: 16px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+}
+.menu a:hover {
+    color: #007FBC;
+}
+.icon {
+    font-size: 24px;
+    margin-right: 8px;
+    margin-left: 16px;
+}
+#frase-informativa {
+    font-weight: bold;
+    font-size: 24px;
+}
+.dropdown-menu {
+    margin-top: 14px;
+}
+.dropdown-item {
+    color: #004D72;
+    font-weight: bold;
+}
+a[class="dropdown-item"]:hover {
+    background-color: #004D72;
+    color: #f3f3f3;
+}
+.pie-pagina {
+    width: 100%;
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #004D72;
+}
+footer li {
+    display: inline;
+    font-size: 16px;
+}
+.contenido {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    color:black;
+}
+#seccion-descubrir {
+    color: black;
+    max-width: 1214px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.descubrir-encabezado {
+    font-size: 26px;
+    padding-bottom: 16px;
+}
+.tarjetas-mini {
+    width: 784px;
+    float: left;
+    margin-right: 0;
+}
+.tarjeta-mini {
+    height: 184px;
+    width: 184px;
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 14px;
+    vertical-align: middle;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.tarjeta-mini-ultima {
+    margin-right: 0px;
+}
+.tarjeta-grande {
+    height: 382px;
+    width: 382px;
+    margin-right: 16px;
+    float: left;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.descubrir-subtitulo {
+    color: black;
+}
+.tarjeta-gde-img{
+    height: 282px;
+    width: 382px;
+    align-content: center;
+}
+.pie-elemento {
+    height: 100%;
+    width: 100%;
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+.pie-icon {
+    font-size: 32px;
+    margin-right: 16px;
 }
