@@ -60,23 +60,39 @@ a[class="dropdown-item"]:hover {
     background-color: #004D72;
     color: #f3f3f3;
 }
-.pie-pagina {
-    width: 100%;
-    height: auto;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: #004D72;
+.separador {
+    border-top: 2px solid rgba(51,51,51,.1);
 }
-footer li {
+.seccion-vendidos {
+    max-width: 1214px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.tarjeta-vendido {
+    width: 206px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+.tarjeta-vendido-img {
+    width: 206px;
+    height: 224px;
+    vertical-align: middle;
+}
+.tarjeta-texto {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 1px solid rgba(51,51,51,.1);
+}
+.no-margin-text {
+    margin-bottom: 0;
     display: inline;
-    font-size: 16px;
 }
 .contenido {
     margin-top: 32px;
     margin-bottom: 32px;
-    color:black;
 }
 #seccion-descubrir {
     color: black;
@@ -102,6 +118,7 @@ footer li {
     vertical-align: middle;
     background-color: #ffffff;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
 }
 .tarjeta-mini-ultima {
     margin-right: 0px;
@@ -113,9 +130,14 @@ footer li {
     float: left;
     background-color: #ffffff;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
 }
-.descubrir-subtitulo {
-    color: black;
+
+div[id="seccion-descubrir"] img {
+    border-radius: 4px;
+}
+.subtitulo {
+    color: #333333;
 }
 .tarjeta-gde-img{
     height: 282px;
@@ -132,4 +154,17 @@ footer li {
 .pie-icon {
     font-size: 32px;
     margin-right: 16px;
+}
+.pie-pagina {
+    width: 100%;
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #004D72;
+}
+footer li {
+    display: inline;
+    font-size: 16px;
 }
