@@ -216,3 +216,11 @@ footer li {
     vertical-align: middle;
     overflow: hidden;
 }
+.tarjetas-explorar {
+    color: #333333;
+    max-width: 1214px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
