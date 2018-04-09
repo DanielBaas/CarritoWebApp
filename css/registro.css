@@ -58,6 +58,7 @@ input:not(.termsNConds){
 #terminosYCondiciones{
 	float: left;
   	display: inline;
+    margin-right: 8px;
 }
 #termsText{
 	font-size: 12px;
