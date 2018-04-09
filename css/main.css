@@ -94,6 +94,32 @@ a[class="dropdown-item"]:hover {
     margin-top: 32px;
     margin-bottom: 32px;
 }
+.seccion-categorias {
+    color: black;
+    max-width: 1214px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.tarjeta-categoria {
+    width: 169px;
+    height: 169px;
+    background-color: #ffffff;
+    color: #004D72;
+}
+.borde-categoria {
+    border-right: 1px solid rgba(51,51,51,.1);
+}
+.icono-categoria {
+    margin-top: 32px;
+    font-size: 80px;
+    padding-bottom: 8px;
+}
+.categoria {
+    padding-left: 0;
+    padding-right: 0;
+}
 #seccion-descubrir {
     color: black;
     max-width: 1214px;
