@@ -75,6 +75,7 @@ a[class="dropdown-item"]:hover {
     background-color: #ffffff;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
+    margin-bottom: 16px;
 }
 .tarjeta-vendido-img {
     width: 206px;
@@ -95,7 +96,7 @@ a[class="dropdown-item"]:hover {
     margin-bottom: 32px;
 }
 .seccion-categorias {
-    color: black;
+    color: #333333;
     max-width: 1214px;
     margin-left: auto;
     margin-right: auto;
@@ -119,9 +120,10 @@ a[class="dropdown-item"]:hover {
 .categoria {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 16px;
 }
 #seccion-descubrir {
-    color: black;
+    color: #333333;
     max-width: 1214px;
     margin-left: auto;
     margin-right: auto;
@@ -131,7 +133,7 @@ a[class="dropdown-item"]:hover {
     padding-bottom: 16px;
 }
 .tarjetas-mini {
-    width: 784px;
+    max-width: 784px;
     float: left;
     margin-right: 0;
 }
@@ -153,6 +155,7 @@ a[class="dropdown-item"]:hover {
     height: 382px;
     width: 382px;
     margin-right: 16px;
+    margin-bottom: 16px;
     float: left;
     background-color: #ffffff;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
@@ -193,4 +196,23 @@ div[id="seccion-descubrir"] img {
 footer li {
     display: inline;
     font-size: 16px;
+}
+.seccion-acerca {
+    color: #333333;
+    max-width: 1214px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+.acerca-elemento {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.acerca-img {
+    width: 562px;
+    height: 374px;
+    vertical-align: middle;
+    overflow: hidden;
 }
