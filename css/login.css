@@ -1,3 +1,4 @@
+/*Log-in content*/
 body {
     width: 100%;
     font-family: 'Ubuntu', sans-serif;
@@ -23,7 +24,7 @@ body {
     font-size: 24px;
 	color: white;
 }
-.register-form, .login-form{
+.login-form{
     height: auto;
 	margin-top: 5%;
 	margin-left: 32%;
@@ -39,31 +40,17 @@ body {
 	border-color: black;
 	border-style:ridge;
 }
-.btnRegistrar{
-	align-content: center;
-}
 
-#formaRegistro{
-	text-align: left;
-	padding-bottom: 3%;
-	padding-top: 3%;
-	padding-left: 10%;
-	padding-right: 10%;
-	
-}
-input:not(.termsNConds){
-	float: right;
+input{
+	width: 308px;
 	text-align: center;
+	margin-bottom: 1%;
+	border-top: hidden;
+	border-left: hidden;
+	border-right: hidden;
+	border-bottom:  inset;
 }
-#terminosYCondiciones{
-	float: left;
-  	display: inline;
-    margin-right: 8px;
-}
-#termsText{
-	font-size: 12px;
-}
-#botonRegistrar{
+#btnAcceder{
 	float: none;
 	margin: auto;
 	display: block;
@@ -75,8 +62,9 @@ input:not(.termsNConds){
 #formaAcceder{
 	display: block;
 	align-content: center;
+	
 }
-input.elementoLogin{
+.elementoLogin{
 	alig
 	text-align: center;
 	align-self: center;

@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
-
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>REGISTRO - BACARO ONLINE TECH-STORE</title>
-
-    <!-- Bootstrap 4, JQuery 3.2.1, Popper 1.12.9 -->
+<meta charset="utf-8">
+<title>INICIAR SESI&Oacute;N - BACARO ONLINE TECH-STORE </title>
+	<!-- Bootstrap 4, JQuery 3.2.1, Popper 1.12.9 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -14,7 +11,7 @@
     <!-- Font Awesome 5.0.9 -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 	
-    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/login.css" media="all">
 	<script type="text/javascript" src="js/registro.js"></script>
 </head>
 
@@ -45,40 +42,26 @@
             </div>
         </div> <!-- encabezado -->
 		
-		<div class="register-form">
+		<div class="login-form" align="center">
 			<p>
 			<h3>
-			<b>Crear una cuenta</b>
+			<b>Accede a tu cuenta</b>
 			</h3>
 			</p>
 			</br>
-			<form name="formaRegistro" id= "formaRegistro" action="" method = "get">
-			<label for="nombreDelUsuario"><b>Nombre:</b></label>
-			<input type="text" id="nombreDelUsuario" name="nombreDelUsuario" required placeholder="Nombre(s)" />
+			<form class="elementoLogin" name="formaAcceder" id= "formaAcceder" action="" method = "get">
+			<input class="elementoLogin" type="email" id="emailUsuario" name="emailUsuario" required placeholder="e-mail de usuario" />
 			</br>
-			<label for="apellidosDelUsuario"><b>Apellidos:</b></label>
-			<input type="text" id="apellidosDelUsuario" name="apellidosDelUsuario" required placeholder="Apellidos" />
-			</br>
-			<label for="correoDelUsuario"><b>E-mail:</b></label>
-			<input type="email" id="correoDelUsuario" name="correoDelUsuario" required placeholder="example@email.com" />
-			</br>
-			<label for="passwordDelUsuario"><b>Contrase&ntilde;a:</b></label>	
-			<input type="password" id="passwordDelUsuario" name="passwordDelUsuario" required placeholder="Mínimo 6 caracteres" />
-			</br>
-			<label for="confirmarPassword"><b>Confirmar Contrase&ntilde;a:</b></label>	
-			<input type="password" id="confirmarPassword" name="confirmarPassword" required placeholder="Repetir Contrase&ntilde;a"/>
+			<input class="elementoLogin" type="password" id="pwdUsuario" name="pwdUsuario" required placeholder="Contrase&ntilde;a" />
 			</br>
 			</br>
-			<input class= "termsNConds" type="checkbox" id="terminosYCondiciones" name="terminosYCondiciones" onClick="checkifempty()" />
-			<p id="termsText"><label for="terminosYCondiciones">&nbsp;Acepto que soy mayor de edad y estoy de acuerdo con los</label> <a href="index.html">Terminos y condiciones de BACARO Online Technology Store </a></p>
-			</br>
-			<input class="btnRegistrar" type="submit" id="botonRegistrar" name="botonRegistrar" value="Registrar" disabled="disabled" />
+			<input  class="elementoLogin" type="submit" id="btnAcceder" name="btnAcceder" value="Acceder"/>
 			</form>
 			</br>
 			<p>
-				<a href="http://www.facebook.com"> <img src="img/registrarConFB.png"/> </a>
+				<a href="http://www.facebook.com"> <img src="img/accederFacebook.png"/> </a>
 				<h6>
-					¿Ya tienes una cuenta? <a href="login.html"> Inicia Sesión</a>
+					¿No tienes una cuenta? <a href="registro.html"> Reg&iacute;strate</a>
 				</h6>
 			</p>
 		</div>
@@ -86,4 +69,5 @@
 
     </div> <!-- container -->
 </body>
+</html>
 </html>
