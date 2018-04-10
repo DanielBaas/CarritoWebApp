@@ -35,3 +35,18 @@ function reporteRegistro(f){
 		alert("No se ha podido completar el registro, hay campos vacíos.");
 	}
 }
+
+function reporteInicioSesion(f){
+	var ok = true;
+	  if(f.elements["emailUsuario"].value == ""){
+		ok = false;
+	  }
+		if(f.elements["pwdUsuario"].value == ""){
+		ok = false;
+	  }
+	if(ok == true){
+		alert("¡Bienvenido!");
+	} else{
+		alert("No has podido acceder, hay campos vacíos.");
+	}
+}

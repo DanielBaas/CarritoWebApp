@@ -49,10 +49,10 @@
 			</h3>
 			</p>
 			</br>
-			<form class="elementoLogin" name="formaAcceder" id= "formaAcceder" action="" method = "get">
-			<input class="elementoLogin" type="email" id="emailUsuario" name="emailUsuario" required placeholder="e-mail de usuario" />
+			<form class="elementoLogin" name="formaAcceder" id= "formaAcceder" action="" method = "get" onSubmit="reporteInicioSesion(this)">
+			<input class="elementoLogin" type="email" id="emailUsuario" name="emailUsuario" required placeholder="e-mail de usuario" value= ""/>
 			</br>
-			<input class="elementoLogin" type="password" id="pwdUsuario" name="pwdUsuario" required placeholder="Contrase&ntilde;a" />
+			<input class="elementoLogin" type="password" id="pwdUsuario" name="pwdUsuario" required placeholder="Contrase&ntilde;a" value= "" />
 			</br>
 			</br>
 			<input  class="elementoLogin" type="submit" id="btnAcceder" name="btnAcceder" value="Acceder"/>
