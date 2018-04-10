@@ -40,7 +40,7 @@
 
             <div class="col-3">
                 <div class="row">
-                    <div id="frase-informativa" class="col" align="center">¡La tienda del millenial! #Millenial4Evah</div>
+                    <div id="frase-informativa" class="col" align="center">¡La tienda del millenial!</div>
                 </div>
             </div>
         </div> <!-- encabezado -->
@@ -52,21 +52,21 @@
 			</h3>
 			</p>
 			</br>
-			<form name="formaRegistro" id= "formaRegistro" action="" method = "get">
+			<form name="formaRegistro" id= "formaRegistro" action="" method = "get" onSubmit="reporteRegistro(this)">
 			<label for="nombreDelUsuario"><b>Nombre:</b></label>
-			<input type="text" id="nombreDelUsuario" name="nombreDelUsuario" required placeholder="Nombre(s)" />
+			<input type="text" id="nombreDelUsuario" name="nombreDelUsuario" required placeholder="Nombre(s)" value="" />
 			</br>
 			<label for="apellidosDelUsuario"><b>Apellidos:</b></label>
-			<input type="text" id="apellidosDelUsuario" name="apellidosDelUsuario" required placeholder="Apellidos" />
+			<input type="text" id="apellidosDelUsuario" name="apellidosDelUsuario" required placeholder="Apellidos" value=""/>
 			</br>
 			<label for="correoDelUsuario"><b>E-mail:</b></label>
-			<input type="email" id="correoDelUsuario" name="correoDelUsuario" required placeholder="example@email.com" />
+			<input type="email" id="correoDelUsuario" name="correoDelUsuario" required placeholder="example@email.com"  value="" />
 			</br>
 			<label for="passwordDelUsuario"><b>Contrase&ntilde;a:</b></label>	
-			<input type="password" id="passwordDelUsuario" name="passwordDelUsuario" required placeholder="Mínimo 6 caracteres" />
+			<input type="password" id="passwordDelUsuario" name="passwordDelUsuario" required placeholder="Mínimo 6 caracteres" value="" />
 			</br>
 			<label for="confirmarPassword"><b>Confirmar Contrase&ntilde;a:</b></label>	
-			<input type="password" id="confirmarPassword" name="confirmarPassword" required placeholder="Repetir Contrase&ntilde;a"/>
+			<input type="password" id="confirmarPassword" name="confirmarPassword" required placeholder="Repetir Contrase&ntilde;a" value="" />
 			</br>
 			</br>
 			<input class= "termsNConds" type="checkbox" id="terminosYCondiciones" name="terminosYCondiciones" onClick="checkifempty()" />

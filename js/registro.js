@@ -10,3 +10,28 @@ function checkifempty()
   }
  
 }
+function reporteRegistro(f){
+	var ok = true;
+	  if(f.elements["nombreDelUsuario"].value == ""){
+		ok = false;
+	  }
+		if(f.elements["apellidosDelUsuario"].value == ""){
+		ok = false;
+	  }
+	
+	if(f.elements["correoDelUsuario"].value == ""){
+		ok = false;
+	  }
+	if(f.elements["passwordDelUsuario"].value == ""){
+		ok = false;
+	  }
+	
+	if(f.elements["confirmarPassword"].value == ""){
+		ok = false;
+	  }
+	if(ok == true){
+		alert("Registro Completado con éxito");
+	} else{
+		alert("No se ha podido completar el registro, hay campos vacíos.");
+	}
+}
