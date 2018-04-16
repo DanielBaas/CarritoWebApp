@@ -13,9 +13,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Font Awesome 5.0.9 -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/admin.css">
     <script type="text/javascript" src="js/admin.js"></script>
+    <script type="text/javascript" src="js/charts.js"></script>
 </head>
 
 <body>
@@ -101,7 +104,7 @@
                         </a>
                     </div>
 
-                    <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar">
+                    <a href="#" class="list-group-item d-inline-block collapsed" data-parent="#sidebar" title="Bitácora de eventos del portal web">
                         <i class="fas fa-file-alt"></i>
                         <span class="d-none d-md-inline"> Bitácora</span>
                     </a>
@@ -118,45 +121,55 @@
             <div class="col" id="dashboard">
                 <div class="row">
                     <!--<div class="col">-->
-                        <div class="col-3 tarjeta-info">
-                            <div class="tarjeta-contenido tarjeta1">
-                                <h6>Total de <strong>VISITANTES</strong></h6>
-                                <h1 id="total-visitantes">25, 153</h1>
-                            </div>
-                            <div class="tarjeta-footer tarjeta1-footer">
-                                <span id="incremento-trafico">39%</span> <span> incremento en el tráfico</span>
-                            </div>
+                    <div class="col-3 tarjeta-info">
+                        <div class="tarjeta-contenido tarjeta1">
+                            <h6>Total de <strong>VISITANTES</strong></h6>
+                            <h1 id="total-visitantes">25, 153</h1>
                         </div>
-                        <div class="col-3 tarjeta-info">
-                            <div class="tarjeta-contenido tarjeta2">
-                                <h6>Total de <strong>VENTAS</strong></h6>
-                                <h1 id="total-ventas">25, 153</h1>
-                            </div>
-                            <div class="tarjeta-footer tarjeta2-footer">
-                                <span id="incremento-ventas">11%</span> <span> decremento en ventas</span>
-                            </div>
+                        <div class="tarjeta-footer tarjeta1-footer">
+                            <span id="incremento-trafico">39%</span> <span> incremento en el tráfico</span>
                         </div>
-                        <div class="col-3 tarjeta-info">
-                            <div class="tarjeta-contenido tarjeta3">
-                                <h6>Total de <strong>INGRESOS</strong></h6>
-                                <h1 id="total-ingresos">25, 153</h1>
-                            </div>
-                            <div class="tarjeta-footer tarjeta3-footer">
-                                <span id="incremento-ingresos">7%</span> <span> decremento en ingresos</span>
-                            </div>
+                    </div>
+                    <div class="col-3 tarjeta-info">
+                        <div class="tarjeta-contenido tarjeta2">
+                            <h6>Total de <strong>VENTAS</strong></h6>
+                            <h1 id="total-ventas">6, 399</h1>
                         </div>
-                        <div class="col-3 tarjeta-info">
-                            <div class="tarjeta-contenido tarjeta4">
-                                <h6>Total de <strong>USUARIOS</strong></h6>
-                                <h1 id="total-usuarios">25, 153</h1>
-                            </div>
-                            <div class="tarjeta-footer tarjeta4-footer">
-                                <span id="incremento-usuarios">6%</span> <span> incremento de usuarios</span>
-                            </div>
+                        <div class="tarjeta-footer tarjeta2-footer">
+                            <span id="incremento-ventas">11%</span> <span> decremento en ventas</span>
                         </div>
+                    </div>
+                    <div class="col-3 tarjeta-info">
+                        <div class="tarjeta-contenido tarjeta3">
+                            <h6>Total de <strong>INGRESOS</strong></h6>
+                            <h1 id="total-ingresos">$70, 389</h1>
+                        </div>
+                        <div class="tarjeta-footer tarjeta3-footer">
+                            <span id="incremento-ingresos">7%</span> <span> decremento en ingresos</span>
+                        </div>
+                    </div>
+                    <div class="col-3 tarjeta-info">
+                        <div class="tarjeta-contenido tarjeta4">
+                            <h6>Total de <strong>USUARIOS</strong></h6>
+                            <h1 id="total-usuarios">18, 648</h1>
+                        </div>
+                        <div class="tarjeta-footer tarjeta4-footer">
+                            <span id="incremento-usuarios">6%</span> <span> incremento de usuarios</span>
+                        </div>
+                    </div>
+
+                    <div class="w-100"></div>
+
+                    <div id="grafica" class="col">
+                        <canvas id="myChart"></canvas>
+                    </div>
                     <!--</div>-->
                 </div>
-            </div>
+            </div> <!-- info cards -->
+
+
+
+
         </div>
     </div>
 </body>
