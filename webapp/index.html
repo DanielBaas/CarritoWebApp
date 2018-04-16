@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="dropdown" align="center">
-                        <button id="profile-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button id="profile-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
                             <div id="navbar-profile"></div>
                             <div class="nombre-perfil">
                                 <span> Cosme Fulanito</span>
@@ -54,8 +54,7 @@
                         </div>
                     </div>
                 </div>
-
-            </div>
+            </div> <!-- navbar superior -->
 
             <div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width" id="sidebar">
                 <div class="list-group border-0 card text-center text-md-left">
@@ -114,38 +113,50 @@
                 </div>
             </div> <!-- menu lateral -->
 
-            <!--<main class="col-md-9 float-left col px-5 pl-md-2 pt-2 main">
-                <a href="#" data-target="#sidebar" data-toggle="collapse"><i class="fa fa-navicon fa-2x py-2 p-1"></i></a>
-                <div class="page-header">
-                    <h2>Bootstrap 4 Sidebar Menu</h2>
-                </div>
-                <p class="lead">A responsive, multi-level vertical accordion.</p>
-                <hr>
+            <div class="w-100"></div>
+
+            <div class="col" id="dashboard">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <button role="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo" aria-expanded="true">
-                            horizontal collapsible
-                        </button>
-                        <div id="demo" class="width collapse show" aria-expanded="true">
-                            <div class="list-group" style="width:400px">
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <!--<div class="col">-->
+                        <div class="col-3 tarjeta-info">
+                            <div class="tarjeta-contenido tarjeta1">
+                                <h6>Total de <strong>VISITANTES</strong></h6>
+                                <h1 id="total-visitantes">25, 153</h1>
+                            </div>
+                            <div class="tarjeta-footer tarjeta1-footer">
+                                <span id="incremento-trafico">39%</span> <span> incremento en el tráfico</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <button role="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo2" aria-expanded="true">
-                            vertical collapsible
-                        </button>
-                        <div id="demo2" class="height collapse show" aria-expanded="true">
-                            <div>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <div class="col-3 tarjeta-info">
+                            <div class="tarjeta-contenido tarjeta2">
+                                <h6>Total de <strong>VENTAS</strong></h6>
+                                <h1 id="total-ventas">25, 153</h1>
+                            </div>
+                            <div class="tarjeta-footer tarjeta2-footer">
+                                <span id="incremento-ventas">11%</span> <span> decremento en ventas</span>
                             </div>
                         </div>
-                    </div>
+                        <div class="col-3 tarjeta-info">
+                            <div class="tarjeta-contenido tarjeta3">
+                                <h6>Total de <strong>INGRESOS</strong></h6>
+                                <h1 id="total-ingresos">25, 153</h1>
+                            </div>
+                            <div class="tarjeta-footer tarjeta3-footer">
+                                <span id="incremento-ingresos">7%</span> <span> decremento en ingresos</span>
+                            </div>
+                        </div>
+                        <div class="col-3 tarjeta-info">
+                            <div class="tarjeta-contenido tarjeta4">
+                                <h6>Total de <strong>USUARIOS</strong></h6>
+                                <h1 id="total-usuarios">25, 153</h1>
+                            </div>
+                            <div class="tarjeta-footer tarjeta4-footer">
+                                <span id="incremento-usuarios">6%</span> <span> incremento de usuarios</span>
+                            </div>
+                        </div>
+                    <!--</div>-->
                 </div>
-            </main>-->
+            </div>
         </div>
     </div>
 </body>

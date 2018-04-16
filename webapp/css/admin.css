@@ -26,7 +26,6 @@ label {
     font-size: 26px;
     background-color: #004D72;
     color: #f3f3f3;
-    width: 100%;
 }
 #sidebar .list-group {
     min-width: 100%;
@@ -223,6 +222,11 @@ a[class="dropdown-item"]:hover {
     background-color: #004D72;
     color: #f3f3f3;
 }
+.dropdown-toggle:after {
+    margin-top: 28px;
+    margin-left: 8px;
+    font-size: 24px;
+}
 .hover-transition {
     transition-duration: 0.3s;
 }
@@ -235,4 +239,44 @@ a[class="dropdown-item"]:hover {
 }
 .right-options {
     float: right;
+}
+.tarjeta-contenido {
+    padding: 16px;
+    color: #ffffff;
+}
+.tarjeta-footer {
+    padding: 4px 16px 4px 16px;
+    color: #ffffff
+}
+.tarjeta1 {
+    background-color: #abb7b7;
+}
+.tarjeta1-footer {
+    background-color: #9aa4a4;
+}
+.tarjeta2 {
+    background-color: #68c39f;
+}
+.tarjeta2-footer {
+    background-color: #5daf8f;
+}
+.tarjeta3 {
+    background-color: #edce8c;
+}
+.tarjeta3-footer {
+    background-color: #d5b97e;
+}
+.tarjeta4 {
+    background-color: #4a525f;
+}
+.tarjeta4-footer {
+    background-color: #424a55;
+}
+.tarjeta-info h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+#dashboard {
+    padding: 32px;
+    background-color: #f3f3f3;
 }
