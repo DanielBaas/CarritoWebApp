@@ -15,6 +15,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/admin.css">
+    <script type="text/javascript" src="js/admin.js"></script>
 </head>
 
 <body>
@@ -22,13 +23,38 @@
         <div class="row d-flex d-md-block flex-nowrap wrapper">
             <div class="col" id="menu-superior">
                 <div id="menu-hamburguesa">
-                    <a href="#" data-target="#sidebar" data-toggle="collapse">
+                    <a href="#" data-target="#sidebar" data-toggle="collapse" class="hover-transition">
                         <i class="fas fa-bars"></i>
                     </a>
                 </div>
-                <div id="menu-img">
+
+                <div id="navbar-logo">
                     <img src="img/bacaro.png" alt="BACARO logo">
                 </div>
+
+                <div class="right-options">
+                    <div id="fullscreen-button">
+                        <a href="#" title="Ver en pantalla completa" class="hover-transition" onclick="toggleFullScreen()">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </a>
+                    </div>
+
+                    <div class="dropdown" align="center">
+                        <button id="profile-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div id="navbar-profile"></div>
+                            <div class="nombre-perfil">
+                                <span> Cosme Fulanito</span>
+                            </div>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="profile-button">
+                            <a class="dropdown-item" href="#">Mi perfil</a>
+                            <a class="dropdown-item" href="#">Ajustes de la cuenta</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Cerrar sesión</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width" id="sidebar">
@@ -37,43 +63,8 @@
                         <i class="fas fa-home"></i>
                         <span class="d-none d-md-inline"> Inicio</span>
                     </a>
-                    <!--<div class="collapse" id="menu1" data-parent="#sidebar">
-                        <a href="#menu1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 1 </a>
-                        <div class="collapse" id="menu1sub1" data-parent="#menu1">
-                            <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem a</a>
-                            <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem b</a>
-                            <a href="#menu1sub1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem c </a>
-                            <div class="collapse" id="menu1sub1sub1">
-                                <a href="#" class="list-group-item" data-parent="#menu1sub1sub1">Subitem c.1</a>
-                                <a href="#" class="list-group-item" data-parent="#menu1sub1sub1">Subitem c.2</a>
-                            </div>
-                            <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem d</a>
-                            <a href="#menu1sub1sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem e </a>
-                            <div class="collapse" id="menu1sub1sub2">
-                                <a href="#" class="list-group-item">Subitem e.1</a>
-                                <a href="#" class="list-group-item">Subitem e.2</a>
-                            </div>
-                        </div>
-                        <a href="#menu1sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 2</a>
-                        <div class="collapse" id="menu1sub2" data-parent="#menu1">
-                            <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 1 a</a>
-                            <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 2 b</a>
-                            <a href="#menu1sub1sub1" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 3 c </a>
-                            <div class="collapse" id="menu1sub1sub1">
-                                <a href="#" class="list-group-item" data-parent="#menu1sub1sub1">Subitem 3 c.1</a>
-                                <a href="#" class="list-group-item" data-parent="#menu1sub1sub1">Subitem 3 c.2</a>
-                            </div>
-                            <a href="#" class="list-group-item" data-parent="#menu1sub1">Subitem 4 d</a>
-                            <a href="#menu1sub1sub2" class="list-group-item" data-toggle="collapse" aria-expanded="false">Subitem 5 e </a>
-                            <div class="collapse" id="menu1sub1sub2">
-                                <a href="#" class="list-group-item" data-parent="#menu1sub1sub2">Subitem 5 e.1</a>
-                                <a href="#" class="list-group-item" data-parent="#menu1sub1sub2">Subitem 5 e.2</a>
-                            </div>
-                        </div>
-                        <a href="#" class="list-group-item">Subitem 3</a>
-                    </div> -->
 
-                    <a href="#usuarios" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
+                    <a href="#usuarios" class="list-group-item d-inline-block collapsed menu-hover" data-toggle="collapse" aria-expanded="false">
                         <i class="fas fa-users"></i>
                         <span class="d-none d-md-inline"> Usuarios</span>
                     </a>
