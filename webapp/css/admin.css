@@ -12,6 +12,7 @@ img {
 a {
     color: #f3f3f3;
     text-decoration: none;
+    transition-duration: 0.3s;
 }
 a:hover {
     color: #007FBC;
