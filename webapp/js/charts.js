@@ -34,26 +34,4 @@ window.onload = function () {
             }
         }
     });
-
-    //Gráfica de barras para el top 5 de productos más vendidos
-    new Chart(document.getElementById("graficaBarra"), {
-        type: 'bar',
-        data: {
-            labels: ["PlayStation 4", "Nintendo Switch", "Macbook Pro", "Bocina JBL GO", "iPhone X"],
-            datasets: [
-                {
-                    label: "Unidades vendidas",
-                    backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-                    data: [5478,5267, 3785, 2564, 1668]
-                }
-            ]
-        },
-        options: {
-            legend: { display: false },
-            title: {
-                display: true,
-                text: 'Top productos más vendidos (semanal)'
-            }
-        }
-    });
 }
