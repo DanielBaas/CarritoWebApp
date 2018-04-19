@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BACARO Admin Page</title>
+    <title>Informaci&oacute;n de Usuario - BACARO Admin Page</title>
 
     <!-- Bootstrap 4, JQuery 3.2.1, Popper 1.12.9 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,7 +16,7 @@
     <!-- Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/productInfo.css">
     <script type="text/javascript" src="js/admin.js"></script>
     <script type="text/javascript" src="js/charts.js"></script>
 </head>
@@ -120,7 +120,7 @@
 
             <div class="col" id="dashboard">
                 <div class="row">
-                    <div class="col-3 tarjeta-info">
+                    <!--<div class="col-3 tarjeta-info">
                         <div class="tarjeta-contenido tarjeta1">
                             <h6>Total de <strong>VISITANTES</strong></h6>
                             <h1 id="total-visitantes">25, 153</h1>
@@ -128,40 +128,91 @@
                         <div class="tarjeta-footer tarjeta1-footer">
                             <span id="incremento-trafico">39%</span> <span> incremento en el tráfico</span>
                         </div>
-                    </div>
-                    <div class="col-3 tarjeta-info">
-                        <div class="tarjeta-contenido tarjeta2">
-                            <h6>Total de <strong>VENTAS</strong></h6>
-                            <h1 id="total-ventas">6, 399</h1>
-                        </div>
-                        <div class="tarjeta-footer tarjeta2-footer">
-                            <span id="incremento-ventas">11%</span> <span> decremento en ventas</span>
-                        </div>
-                    </div>
-                    <div class="col-3 tarjeta-info">
-                        <div class="tarjeta-contenido tarjeta3">
-                            <h6>Total de <strong>INGRESOS</strong></h6>
-                            <h1 id="total-ingresos">$70, 389</h1>
-                        </div>
-                        <div class="tarjeta-footer tarjeta3-footer">
-                            <span id="incremento-ingresos">7%</span> <span> decremento en ingresos</span>
-                        </div>
-                    </div>
-                    <div class="col-3 tarjeta-info">
-                        <div class="tarjeta-contenido tarjeta4">
-                            <h6>Total de <strong>USUARIOS</strong></h6>
-                            <h1 id="total-usuarios">18, 648</h1>
-                        </div>
-                        <div class="tarjeta-footer tarjeta4-footer">
-                            <span id="incremento-usuarios">6%</span> <span> incremento de usuarios</span>
-                        </div>
-                    </div>
+                    </div> 
 
-                    <div class="w-100"></div>
+                   	<div class="w-100"></div>-->
+					<div id="infoProductos" class="col">
+						
+						<form id="ProductInfoForm" action="" method="get" onSubmit="">
+							<div id= "contenidoProductForm">
+								<div id="seccionInfo1" class="infoProduct">
+									<h3><b>Información General</b></h1>
+									</br>
+									</br>
+									<label for="NombreUsuario">Nombre:</label>
+									</br>
+									<input type="text" value="" id="NombreUsuario" name="NombreUsuario"  placeholder="Nombre del usuario" required/>
+									</br>
+									<label for="apellidosPerfil">Apellido:</label>
+									</br>
+									<input type="text" value="" id="apellidosPerfil" name="apellidosPerfil"  placeholder="Apellido paterno del usuario" required/>
+									</br>
+									<label for="edadPerfil">Fecha de Nacimiento:</label>
+									</br>
+									<input type="date" value="" id="edadPerfil" name="edadPerfil"  placeholder="Edad del usuario" required/>
+									</br>
+									<label for="fotoPerfil">Imagen de perfil:</label>
+									</br>
+									<input type="file" value="" id="fotoPerfil" name="fotoPerfil"  placeholder="Suba la imagen de perfil" />
+									</br>
+									<label for="descipcionUsuario">Descripci&oacute;n personal:</label>
+									</br>
+									<textarea id="descipcionUsuario" name="descipcionUsuario" placeholder="Descripción general del usuario. Esta informaci&oacute;n se mostrar&aacute; en tu perfil público."></textarea>
+								</div> <!-- infor del Producto-->
+								<div id="seccionInfo2" class="infoProduct">
+									<h3><b>Datos del Usuario</b></h1>
+									</br>
+									</br>
+									<label for="correoElectronico">Correo Electr&oacute;nico:</label>
+									</br>
+									<input type="email" value="" id="correoElectronico" name="correoElectronico"  placeholder="me@example.com" required/>
+									</br>
+									<label for="contrasenia">Contrase&ntilde;a:</label>
+									</br>
+									<input type="password" value="" id="contrasenia" name="contrasenia"  placeholder="Extensión mínima de 8 dígitos" required/>
+									</br>
+									<label for="tipoCuenta">Tipo de cuenta: </label>
+									</br>
+									<select id="tipoCuenta" required >
+									  <option value="volvo">Cliente</option>
+									  <option value="saab">Administrador</option>
+									</select>
+									<!--<label for="precio">Precio Unitario:</label>
+									</br>
+									<input type="number" id="precio" name="precio" required placeholder="Costo total por la venta de cada producto (individual)" value=""></textarea>
+									</br>
+									</br>
+									<h5>Dimensiones:</h5>
+									<div id="dimensionesProducto">
 
-                    <div id="grafica-linea" class="col">
-                        <canvas id="graficaLinea"></canvas>
-                    </div>
+										</br>
+										<div id="dims">
+											<label for="largo">Longitud:</label>
+											</br>
+											<input type="text" id="largo" name="largo" required placeholder="Longitud en cm" value=""/>
+										</div>
+										<div id="dims">
+											<label for="alto">Altura:</label>
+											</br>
+											<input type="text" id="alto" name="alto" required placeholder="Altura en cm" value=""/>
+										</div>
+										<div id="dims">
+											<label for="profundidad">Ancho:</label>
+											</br>
+											<input type="text" id="profundidad" name="profundidad" required placeholder="Anchura en cm" value=""/>
+										</div>
+										</br>
+									</div>-->
+								</div><!--  datos del Producto-->
+
+								
+							</div>
+							<div class="w-100"></div>
+							</br>
+							<input id="registrarProducto" type=submit value="Guardar">
+						</form> 
+					</div><!--  div  form -->
+                    
                 </div>
             </div> <!-- info cards -->
         </div>

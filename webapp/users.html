@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BACARO Admin Page</title>
+    <title>Lista de Usuarios - BACARO Admin Page</title>
 
     <!-- Bootstrap 4, JQuery 3.2.1, Popper 1.12.9 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,7 +16,7 @@
     <!-- Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/productInfo.css">
     <script type="text/javascript" src="js/admin.js"></script>
     <script type="text/javascript" src="js/charts.js"></script>
 </head>
@@ -32,7 +32,7 @@
                 </div>
 
                 <div id="navbar-logo">
-                    <a href="../webapp/index.html"><img src="img/bacaro.png" alt="BACARO logo"></a>
+                    <a href="../webapp/index.html"><img src="img/bacaro.png" alt="BACARO logo"/></a>
                 </div>
 
                 <div class="right-options">
@@ -60,7 +60,7 @@
             </div> <!-- navbar superior -->
 
             <div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width" id="sidebar">
-                	<div class="list-group border-0 card text-center text-md-left">
+            		<div class="list-group border-0 card text-center text-md-left">
                     <a href="../webapp/index.html" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
                         <i class="fas fa-home"></i>
                         <span class="d-none d-md-inline"> Inicio</span>
@@ -120,7 +120,7 @@
 
             <div class="col" id="dashboard">
                 <div class="row">
-                    <div class="col-3 tarjeta-info">
+                    <!--<div class="col-3 tarjeta-info">
                         <div class="tarjeta-contenido tarjeta1">
                             <h6>Total de <strong>VISITANTES</strong></h6>
                             <h1 id="total-visitantes">25, 153</h1>
@@ -128,40 +128,106 @@
                         <div class="tarjeta-footer tarjeta1-footer">
                             <span id="incremento-trafico">39%</span> <span> incremento en el tráfico</span>
                         </div>
-                    </div>
-                    <div class="col-3 tarjeta-info">
-                        <div class="tarjeta-contenido tarjeta2">
-                            <h6>Total de <strong>VENTAS</strong></h6>
-                            <h1 id="total-ventas">6, 399</h1>
-                        </div>
-                        <div class="tarjeta-footer tarjeta2-footer">
-                            <span id="incremento-ventas">11%</span> <span> decremento en ventas</span>
-                        </div>
-                    </div>
-                    <div class="col-3 tarjeta-info">
-                        <div class="tarjeta-contenido tarjeta3">
-                            <h6>Total de <strong>INGRESOS</strong></h6>
-                            <h1 id="total-ingresos">$70, 389</h1>
-                        </div>
-                        <div class="tarjeta-footer tarjeta3-footer">
-                            <span id="incremento-ingresos">7%</span> <span> decremento en ingresos</span>
-                        </div>
-                    </div>
-                    <div class="col-3 tarjeta-info">
-                        <div class="tarjeta-contenido tarjeta4">
-                            <h6>Total de <strong>USUARIOS</strong></h6>
-                            <h1 id="total-usuarios">18, 648</h1>
-                        </div>
-                        <div class="tarjeta-footer tarjeta4-footer">
-                            <span id="incremento-usuarios">6%</span> <span> incremento de usuarios</span>
-                        </div>
-                    </div>
+                    </div> 
 
-                    <div class="w-100"></div>
+                   	<div class="w-100"></div>-->
+					<div id="infoProductos" class="col">
+						<div id="contenidoTabla" class="infoProduct">
+						  <h2>Lista de Usuarios</h2>
+						  <div class="accionAgregar"><button><a href="../webapp/products.html"><i class="fas fa-plus"> </i> Agregar</a></button></div>          
+							  <table class="table table-hover">
+									<thead>
+										<tr>
+											<th>Nombre</th>
+											<th>Apellido</th>
+											<th>TipoDeCuenta</th>
+											<th>FechaDeNacimiento</th>
+											<th>Email</th>
+											<th>Contrase&ntilde;a</th>
+											<th>Descripci&oacute;n</th>
+											<th> </th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Dzu</td>
+											<td>Chang</td>
+											<td>Administrador</td>
+											<td>10/11/1997</td>
+											<td>chang.dzu@example.com</td>
+											<td>DSeTs%#s11</td>
+											<td>"Chin chan chong"</td>
+											<td>
+												<div class="accionTabla">
+													<button id="editar">
+														<a href="#" >
+															<i class="far fa-trash-alt"></i>
+														</a> 
+													</button> 
+													<button id="eliminar">
+														<a href="../webapp/profiletInfo.html">
+															<i class="far fa-edit"></i>
+														</a>
+													</button> 
+													
+												</div> 
+											</td>
+										</tr>
+										<tr>
+											<td>John</td>
+											<td>Doe</td>
+											<td>Cliente</td>
+											<td>10/11/1983</td>
+											<td>john@example.com</td>
+											<td>Patito33</td>
+											<td>"Chaviza Foreva"</td>
+											<td>
+												<div class="accionTabla">
+													<button id="editar">
+														<a href="#" >
+															<i class="far fa-trash-alt"></i>
+														</a> 
+													</button> 
+													<button id="eliminar">
+														<a href="../webapp/profiletInfo.html">
+															<i class="far fa-edit"></i>
+														</a>
+													</button> 
+													
+												</div> 
+											</td>
+										</tr>
+										<tr>
+											<td>Panchito</td>
+											<td>S&aacute;nchez</td>
+											<td>Cliente</td>
+											<td>12/04/1999</td>
+											<td>pancho_wigetta@example.com</td>
+											<td>Rubius999</td>
+											<td>"Maincra Rulez"</td>
+											<td>
+												<div class="accionTabla">
+													<button id="editar">
+														<a href="#" >
+															<i class="far fa-trash-alt"></i>
+														</a> 
+													</button> 
+													<button id="eliminar">
+														<a href="../webapp/profiletInfo.html">
+															<i class="far fa-edit"></i>
+														</a>
+													</button> 
+													
+												</div> 
+											</td>
+										</tr>
+									</tbody>
+							  </table>
+						</div>
 
-                    <div id="grafica-linea" class="col">
-                        <canvas id="graficaLinea"></canvas>
-                    </div>
+						</form> 
+					</div><!--  div  form -->
+                    
                 </div>
             </div> <!-- info cards -->
         </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BACARO Admin Page</title>
+    <title>Lista de Productos - BACARO Admin Page</title>
 
     <!-- Bootstrap 4, JQuery 3.2.1, Popper 1.12.9 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,7 +16,7 @@
     <!-- Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/productInfo.css">
     <script type="text/javascript" src="js/admin.js"></script>
     <script type="text/javascript" src="js/charts.js"></script>
 </head>
@@ -60,7 +60,7 @@
             </div> <!-- navbar superior -->
 
             <div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width" id="sidebar">
-                	<div class="list-group border-0 card text-center text-md-left">
+            		<div class="list-group border-0 card text-center text-md-left">
                     <a href="../webapp/index.html" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
                         <i class="fas fa-home"></i>
                         <span class="d-none d-md-inline"> Inicio</span>
@@ -120,7 +120,7 @@
 
             <div class="col" id="dashboard">
                 <div class="row">
-                    <div class="col-3 tarjeta-info">
+                    <!--<div class="col-3 tarjeta-info">
                         <div class="tarjeta-contenido tarjeta1">
                             <h6>Total de <strong>VISITANTES</strong></h6>
                             <h1 id="total-visitantes">25, 153</h1>
@@ -128,40 +128,128 @@
                         <div class="tarjeta-footer tarjeta1-footer">
                             <span id="incremento-trafico">39%</span> <span> incremento en el tráfico</span>
                         </div>
-                    </div>
-                    <div class="col-3 tarjeta-info">
-                        <div class="tarjeta-contenido tarjeta2">
-                            <h6>Total de <strong>VENTAS</strong></h6>
-                            <h1 id="total-ventas">6, 399</h1>
-                        </div>
-                        <div class="tarjeta-footer tarjeta2-footer">
-                            <span id="incremento-ventas">11%</span> <span> decremento en ventas</span>
-                        </div>
-                    </div>
-                    <div class="col-3 tarjeta-info">
-                        <div class="tarjeta-contenido tarjeta3">
-                            <h6>Total de <strong>INGRESOS</strong></h6>
-                            <h1 id="total-ingresos">$70, 389</h1>
-                        </div>
-                        <div class="tarjeta-footer tarjeta3-footer">
-                            <span id="incremento-ingresos">7%</span> <span> decremento en ingresos</span>
-                        </div>
-                    </div>
-                    <div class="col-3 tarjeta-info">
-                        <div class="tarjeta-contenido tarjeta4">
-                            <h6>Total de <strong>USUARIOS</strong></h6>
-                            <h1 id="total-usuarios">18, 648</h1>
-                        </div>
-                        <div class="tarjeta-footer tarjeta4-footer">
-                            <span id="incremento-usuarios">6%</span> <span> incremento de usuarios</span>
-                        </div>
-                    </div>
+                    </div> 
 
-                    <div class="w-100"></div>
-
-                    <div id="grafica-linea" class="col">
-                        <canvas id="graficaLinea"></canvas>
-                    </div>
+                   	<div class="w-100"></div>-->
+					<div id="infoProductos" class="col">
+						<div id="contenidoTabla" class="infoProduct">
+						  <h2>Lista de Productos</h2>
+						  <div class="accionAgregar"><button><a href="../webapp/products.html"><i class="fas fa-plus"> </i> Agregar</a></button></div>          
+							  <table class="table table-hover">
+									<thead>
+										<tr>
+											<th>NombreProducto</th>
+											<th>Marca</th>
+											<th>Edicion</th>
+											<th>CantidadEnStock</th>
+											<th>FormaDeVenta</th>
+											<th>PrecioUnitario</th>
+											<th>Descripci&oacute;n</th>
+											<th> </th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Nintendo Switch</td>
+											<td>Nintendo</td>
+											<td>ZeldaEdition</td>
+											<td>35</td>
+											<td>Individual</td>
+											<td>7499</td>
+											<td>Consola + Juego(LOZ: BOTW)</td>
+											<td>
+												<div class="accionTabla">
+													<button id="editar">
+														<a href="#" >
+															<i class="far fa-trash-alt"></i>
+														</a> 
+													</button> 
+													<button id="eliminar">
+														<a href="../webapp/productInfo.html">
+															<i class="far fa-edit"></i>
+														</a>
+													</button> 
+													
+												</div> 
+											</td>
+										</tr>
+										<tr>
+											<td>Play Station 4</td>
+											<td>Sony</td>
+											<td>Normal</td>
+											<td>88</td>
+											<td>Individual</td>
+											<td>7999</td>
+											<td>Consola + 1 control PS4</td>
+											<td>
+												<div class="accionTabla">
+													<button id="editar">
+														<a href="#" >
+															<i class="far fa-trash-alt"></i>
+														</a> 
+													</button> 
+													<button id="eliminar">
+														<a href="../webapp/productInfo.html">
+															<i class="far fa-edit"></i>
+														</a>
+													</button> 
+													
+												</div> 
+											</td>
+										</tr>
+										<tr>
+											<td>Mc Book Pro</td>
+											<td>Apple Inc.</td>
+											<td>Normal</td>
+											<td>10</td>
+											<td>Individual</td>
+											<td>39999</td>
+											<td>Laptop 13" </td>
+											<td>
+												<div class="accionTabla">
+													<button id="editar">
+														<a href="#" >
+															<i class="far fa-trash-alt"></i>
+														</a> 
+													</button> 
+													<button id="eliminar">
+														<a href="../webapp/productInfo.html">
+															<i class="far fa-edit"></i>
+														</a>
+													</button> 
+													
+												</div> 
+											</td>
+										</tr>
+										<tr>
+											<td>Bocina JBL GO</td>
+											<td>JBL</td>
+											<td>Normal</td>
+											<td>100</td>
+											<td>Individual</td>
+											<td>499</td>
+											<td>Bocina</td>
+											<td>
+												<div class="accionTabla">
+													<button id="editar">
+														<a href="#" >
+															<i class="far fa-trash-alt"></i>
+														</a> 
+													</button> 
+													<button id="eliminar">
+														<a href="../webapp/productInfo.html">
+															<i class="far fa-edit"></i>
+														</a>
+													</button> 
+													
+												</div> 
+											</td>
+										</tr>
+									</tbody>
+							  </table>
+						</div>
+					</div><!--  div  form -->
+                    
                 </div>
             </div> <!-- info cards -->
         </div>

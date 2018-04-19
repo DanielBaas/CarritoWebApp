@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BACARO Admin Page</title>
+    <title>Informaci&oacute;n de Producto - BACARO Admin Page</title>
 
     <!-- Bootstrap 4, JQuery 3.2.1, Popper 1.12.9 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -16,7 +16,7 @@
     <!-- Chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/productInfo.css">
     <script type="text/javascript" src="js/admin.js"></script>
     <script type="text/javascript" src="js/charts.js"></script>
 </head>
@@ -60,7 +60,7 @@
             </div> <!-- navbar superior -->
 
             <div class="col-md-2 float-left col-1 pl-0 pr-0 collapse width" id="sidebar">
-                	<div class="list-group border-0 card text-center text-md-left">
+            		<div class="list-group border-0 card text-center text-md-left">
                     <a href="../webapp/index.html" class="list-group-item d-inline-block collapsed" data-toggle="collapse" aria-expanded="false">
                         <i class="fas fa-home"></i>
                         <span class="d-none d-md-inline"> Inicio</span>
@@ -120,7 +120,7 @@
 
             <div class="col" id="dashboard">
                 <div class="row">
-                    <div class="col-3 tarjeta-info">
+                    <!--<div class="col-3 tarjeta-info">
                         <div class="tarjeta-contenido tarjeta1">
                             <h6>Total de <strong>VISITANTES</strong></h6>
                             <h1 id="total-visitantes">25, 153</h1>
@@ -128,40 +128,81 @@
                         <div class="tarjeta-footer tarjeta1-footer">
                             <span id="incremento-trafico">39%</span> <span> incremento en el tráfico</span>
                         </div>
-                    </div>
-                    <div class="col-3 tarjeta-info">
-                        <div class="tarjeta-contenido tarjeta2">
-                            <h6>Total de <strong>VENTAS</strong></h6>
-                            <h1 id="total-ventas">6, 399</h1>
-                        </div>
-                        <div class="tarjeta-footer tarjeta2-footer">
-                            <span id="incremento-ventas">11%</span> <span> decremento en ventas</span>
-                        </div>
-                    </div>
-                    <div class="col-3 tarjeta-info">
-                        <div class="tarjeta-contenido tarjeta3">
-                            <h6>Total de <strong>INGRESOS</strong></h6>
-                            <h1 id="total-ingresos">$70, 389</h1>
-                        </div>
-                        <div class="tarjeta-footer tarjeta3-footer">
-                            <span id="incremento-ingresos">7%</span> <span> decremento en ingresos</span>
-                        </div>
-                    </div>
-                    <div class="col-3 tarjeta-info">
-                        <div class="tarjeta-contenido tarjeta4">
-                            <h6>Total de <strong>USUARIOS</strong></h6>
-                            <h1 id="total-usuarios">18, 648</h1>
-                        </div>
-                        <div class="tarjeta-footer tarjeta4-footer">
-                            <span id="incremento-usuarios">6%</span> <span> incremento de usuarios</span>
-                        </div>
-                    </div>
+                    </div> 
 
-                    <div class="w-100"></div>
+                   	<div class="w-100"></div>-->
+					<div id="infoProductos" class="col">
+						
+						<form id="ProductInfoForm" action="" method="get" onSubmit="">
+							<div id= "contenidoProductForm">
+								<div id="seccionInfo1" class="infoProduct">
+									<h3><b>Información General</b></h1>
+									</br>
+									</br>
+									<label for="NombreProducto">Nombre del Producto:</label>
+									</br>
+									<input type="text" value="" id="NombreProducto" name="NombreProducto"  placeholder="Nombre del producto" required/>
+									</br>
+									<label for="imagenProducto">Imagen del Producto:</label>
+									</br>
+									<input type="file" value="" id="imagenProducto" name="imagenProducto"  placeholder="Suba la imagen del producto" required/>
+									</br>
+									<label for="Proveedor">Proveedor/Marca:</label>
+									</br>
+									<input type="text" value="" id="Proveedor" name="Proveedor"  placeholder="Proveedor o marca del producto" required/>
+									</br>
+									<label for="descipcionProducto">Descripci&oacute;n:</label>
+									</br>
+									<textarea id="descipcionProducto" name="descipcionProducto" required placeholder="Descripción general del producto"></textarea>
+								</div> <!-- infor del Producto-->
+								<div id="seccionInfo2" class="infoProduct">
+									<h3><b>Datos del Producto</b></h1>
+									</br>
+									</br>
+									<label for="edicion">Edici&oacute;n del producto:</label>
+									</br>
+									<input type="text" value="" id="edicion" name="edicion"  placeholder="Rareza del producto (Com&uacute;n, Edicion limitada, etc)" required/>
+									</br>
+									<label for="cantidad">Cantidad:</label>
+									</br>
+									<input type="number" value="" id="cantidad" name="cantidad"  placeholder="Cantidad de productos disponibles (1-99999)" required/>
+									</br>
+									<label for="precio">Precio Unitario:</label>
+									</br>
+									<input type="number" id="precio" name="precio" required placeholder="Costo total por cada producto (individualmente)" value=""></textarea>
+									</br>
+									</br>
+									<h5>Dimensiones:</h5>
+									<div id="dimensionesProducto">
 
-                    <div id="grafica-linea" class="col">
-                        <canvas id="graficaLinea"></canvas>
-                    </div>
+										</br>
+										<div id="dims">
+											<label for="largo">Longitud:</label>
+											</br>
+											<input type="text" id="largo" name="largo" required placeholder="Longitud en cm" value=""/>
+										</div>
+										<div id="dims">
+											<label for="alto">Altura:</label>
+											</br>
+											<input type="text" id="alto" name="alto" required placeholder="Altura en cm" value=""/>
+										</div>
+										<div id="dims">
+											<label for="profundidad">Ancho:</label>
+											</br>
+											<input type="text" id="profundidad" name="profundidad" required placeholder="Anchura en cm" value=""/>
+										</div>
+										</br>
+									</div>
+								</div><!--  datos del Producto-->
+
+								
+							</div>
+							<div class="w-100"></div>
+							</br>
+							<input id="registrarProducto" type=submit value="Guardar">
+						</form> 
+					</div><!--  div  form -->
+                    
                 </div>
             </div> <!-- info cards -->
         </div>
