@@ -27,12 +27,12 @@ label {
     font-size: 26px;
     background-color: #004D72;
     color: #f3f3f3;
-    min-height: 100vh;
+    min-height: 150vh;
 }
 #sidebar .list-group {
     min-width: 100%;
     background-color: #004D72;
-    min-height: 100vh;
+    min-height: 150vh;
 }
 #sidebar i {
     margin-right: 8px;
@@ -78,44 +78,6 @@ label {
 #sidebar .list-group .collapsing .list-group-item  {
     padding-left: 64px;
 }
-
-/*@media (max-width:768px) {
-    #sidebar {
-        min-width: 35px;
-        max-width: 40px;
-        overflow-y: auto;
-        overflow-x: visible;
-        transition: all 0.25s ease;
-        transform: translateX(-45px);
-        position: fixed;
-    }
-
-    #sidebar.show {
-        transform: translateX(0);
-    }
-
-    #sidebar::-webkit-scrollbar{ width: 0px; }
-
-    #sidebar, #sidebar .list-group {
-        min-width: 35px;
-        overflow: visible;
-    }
-    #sidebar .list-group .collapse.show, #sidebar .list-group .collapsing {
-        position: relative;
-        z-index: 1;
-        width: 190px;
-        top: 0;
-    }
-    #sidebar .list-group > .list-group-item {
-        text-align: center;
-        padding: .75rem .5rem;
-    }
-    #sidebar .list-group > .list-group-item[aria-expanded="true"]::after,
-    #sidebar .list-group > .list-group-item[aria-expanded="false"]::after {
-        display:none;
-    }
-}*/
-
 .collapse.show {
     visibility: visible;
 }
