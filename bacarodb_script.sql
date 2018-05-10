@@ -8,7 +8,7 @@ create table clientes (
     correo varchar(30) not null,
     contrasena varchar(10) not null,
     cumpleanos date,
-    imagen_perfil varchar(50),
+    imagen_perfil varchar(200),
     bio varchar(240),
     tipo_cuenta char(1) not null,
     fecha_registro date not null
@@ -16,10 +16,10 @@ create table clientes (
 
 create table productos (
 	id_producto int primary key auto_increment,
-    nombre varchar (50) not null,
-    imagen varchar (50) not null,
+    nombre varchar (200) not null,
+    imagen varchar (200) not null,
     marca varchar (30) not null,
-    descripcion varchar (500),
+    descripcion varchar (2000),
     edicion varchar (20),
     cantidad int not null default 0,
     precio double not null default 999999,
@@ -71,8 +71,8 @@ create table detalles_venta (
 );
 
 create table reviews (
-	reviewid int primary key auto_increment,
+	id_review int primary key auto_increment,
     titulo varchar (50) not null,
-    descripcion varchar (300) not null,
+    descripcion varchar (500) not null,
     calificacion decimal (1, 1) not null
 );
