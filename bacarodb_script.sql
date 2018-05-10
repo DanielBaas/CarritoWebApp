@@ -19,7 +19,7 @@ create table productos (
     nombre varchar (50) not null,
     imagen varchar (50) not null,
     marca varchar (30) not null,
-    descripcion varchar (50),
+    descripcion varchar (500),
     edicion varchar (20),
     cantidad int not null default 0,
     precio double not null default 999999,
@@ -68,4 +68,11 @@ create table detalles_venta (
     foreign key (id_producto) references productos (id_producto),
     foreign key (id_venta) references ventas (id_venta),
     primary key (id_producto, id_venta)
+);
+
+create table reviews (
+	reviewid int primary key auto_increment,
+    titulo varchar (50) not null,
+    descripcion varchar (300) not null,
+    calificacion decimal (1, 1) not null
 );

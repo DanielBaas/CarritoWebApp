@@ -255,9 +255,50 @@ footer {
     border: 1px solid rgba(51,51,51,.1);
     padding-top: 0;
 }
-.grow:hover
-{
+.grow:hover {
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
     transform: scale(1.3);
+}
+.seccion-producto {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 32px;
+}
+.seccion-producto a {
+    color: #333333;
+}
+.spinner {
+    max-width: 60px;
+    height: 100%;
+}
+.precio {
+    color: #B12704;
+}
+.envio {
+    color: #008a00;
+}
+.descripcion {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+.opiniones {
+    margin-top: 32px;
+}
+.producto {
+    margin-bottom: 32px;
+}
+.opinion {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.rating-bottom {
+    margin-bottom: 16px;
+    color: #007FBC;
+}
+.rating-color {
+    color: #007FBC;
 }
