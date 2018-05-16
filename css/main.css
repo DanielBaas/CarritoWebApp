@@ -302,3 +302,6 @@ footer {
 .rating-color {
     color: #007FBC;
 }
+.resultados {
+    max-width: 60%;
+}
