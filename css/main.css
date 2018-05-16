@@ -314,3 +314,24 @@ footer {
     padding-bottom: 8px;
     padding-right: 0px;
 }
+.seccion-carrito {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: #333333;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+.producto-carrito {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-top: solid 3px #f7f7f9;
+    border-bottom: solid 3px #f7f7f9;
+}
+.precio-final {
+    margin-top: 50%;
+}
+.texto {
+    padding-top: 8%;
+}
