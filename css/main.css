@@ -305,3 +305,12 @@ footer {
 .resultados {
     max-width: 60%;
 }
+.botones-producto {
+    display: inline-flex;
+    width: 100%;
+}
+.botones-espacio {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 0px;
+}
