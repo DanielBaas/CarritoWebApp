@@ -359,7 +359,7 @@ Cada control Joy-Con tiene un set completo de botones y se puede usar como contr
 insert into productos (nombre, imagen, marca, descripcion, edicion, cantidad, precio, longitud, altura, ancho) values
 ( 
 'Nintendo Switch - Consola, color gris - Edición Estandar - Nacional - Standard Edition', 
-'img_server/nintendoswitch.jpg', 
+'img_server/nintendoswitch2.jpg', 
 'NINTENDO', 
 '
 La consola Nintendo Switch está diseñada para acompañarte dondequiera que vayas, transformándose de consola de casa en consola portátil al instante. Coloca la consola Nintendo Switch en la base y juega en alta definición, si tienes que salir llévate el juego a cualquier lugar con el modo portátil.
@@ -417,7 +417,7 @@ La membresía de 3 meses gratis de PlayStation Plus funciona para las consolas P
 insert into productos (nombre, imagen, marca, descripcion, edicion, cantidad, precio, longitud, altura, ancho) values
 ( 
 'Sony DSC-H300 Cámara Digital High Zoom Cyber-shot con zoom óptico 35x', 
-'img_server/sonycamara.jpg', 
+'img_server/sonycamera.jpg', 
 'SONY', 
 '
 Cybershot con sensor super HAD CCD de 20.1 mp
