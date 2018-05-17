@@ -329,9 +329,19 @@ footer {
     border-top: solid 3px #f7f7f9;
     border-bottom: solid 3px #f7f7f9;
 }
-.precio-final {
-    margin-top: 50%;
+.espacio {
+    max-width: 200px;
 }
-.texto {
-    padding-top: 8%;
+.boton-pagar {
+    padding-top: 32px;
+}
+.btn-pagar {
+    font-size: 32px;
+    min-width: 180px;
+}
+.encabezado-carrito {
+    margin-bottom: 32px;
+}
+.precio-final {
+    padding-top: 32px;
 }
