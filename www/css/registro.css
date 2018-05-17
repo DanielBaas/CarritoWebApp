@@ -1,0 +1,83 @@
+body {
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+	background-color: #F3F3F3;
+}
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.encabezado {
+    width: 100%;
+    height: auto;
+    background-color: #004D72;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+#frase-informativa {
+    font-weight: bold;
+    font-size: 24px;
+	color: white;
+}
+.register-form, .login-form{
+    height: auto;
+	margin-top: 5%;
+	margin-left: 32%;
+	margin-right:  32%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 1%;
+	padding-right:  1%;
+	background-color: white;
+	text-align: center;
+	font-size: 14px;
+	border-width: thin;
+	border-color: black;
+	border-style:ridge;
+}
+.btnRegistrar{
+	align-content: center;
+}
+
+#formaRegistro{
+	text-align: left;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	padding-left: 10%;
+	padding-right: 10%;
+	
+}
+input:not(.termsNConds){
+	float: right;
+	text-align: center;
+}
+#terminosYCondiciones{
+	float: left;
+  	display: inline;
+    margin-right: 8px;
+}
+#termsText{
+	font-size: 12px;
+}
+#botonRegistrar{
+	float: none;
+	margin: auto;
+	display: block;
+	border:  solid;
+	background-color: lightgray;
+	border-color: lightgray;
+	width: 308px;
+}
+#formaAcceder{
+	display: block;
+	align-content: center;
+}
+input.elementoLogin{
+	alig
+	text-align: center;
+	align-self: center;
+}
