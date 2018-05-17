@@ -72,7 +72,17 @@ create table detalles_venta (
 
 create table reviews (
 	id_review int primary key auto_increment,
-    titulo varchar (50) not null,
-    descripcion varchar (500) not null,
-    calificacion decimal (1, 1) not null
+    id_producto int not null,
+    titulo varchar (200) not null,
+    descripcion varchar (2000) not null,
+    calificacion float not null,
+    foreign key (id_producto) references productos (id_producto)
+);
+
+create table bitacora (
+	id_bitacora int primary key auto_increment,
+	nombre_maquina varchar(50) not null,
+    ip varchar(20) not null,
+    fecha date not null,
+    descripcion varchar(240) not null
 );

@@ -302,9 +302,6 @@ footer {
 .rating-color {
     color: #007FBC;
 }
-.resultados {
-    max-width: 60%;
-}
 .botones-producto {
     display: inline-flex;
     width: 100%;
